@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+</head>
+<body>
+    <p>¿Qué es responsive design? El responsive design permite que los sitios web "se adapten" a diferentes tamaños de pantalla sin comprometer la usabilidad y la experiencia del usuario. El texto, los elementos de la interfaz de usuario y las imágenes se redimensionan y cambian de tamaño según la ventana gráfica. El responsive design permite a los desarrolladores escribir un solo conjunto de código HTML, CSS y JavaScript para múltiples dispositivos, plataformas y navegadores.</p>
+    <p>¿Qué son los breakpoint en responsive design? Es el "punto" en el que el contenido y el diseño de un sitio web se adaptarán de cierta manera para brindar la mejor experiencia de usuario posible. Básicamente, los breakpoints son valores de píxeles que un desarrollador / diseñador puede definir en CSS. Cuando un sitio responsive alcanza esos valores de píxeles, se produce una transformación para que el sitio web ofrezca una experiencia de usuario óptima.</p>
+    <p>Se debe optimizar para todos los dispositivos. Hay tiene que tener en claro un par de conceptos:</p>
+<ul>
+    <li>Break points: cuando la pantalla sea de cierto tamaño, se generará un cambio para reposicionar o redimensionar los contenedores.</li>
+    <li>Media Queries: son condicionales. No es la mejor práctica pero aplicándolo al CSS: @media (min-width: #;) {"código que se aplicará"} y se aplican para cada tamaño de dispositivo. El pixelaje dado será el break point.</li>
+</ul>
+<p>Lo más importante es diseñar para movil. Por lo que se debe diseñar con mobile first. Es decir, primero diseñar para celular, luego un break point para tablet y finalmente un break point para PC.</p>
+<p>Para aplicar media queries con buenas prácticas, hay que hacerlo en el header. Porque así solo se descarga el código necesario según el dispositivo, mientras que en CSS se descarga todo sin importar nada.</p>
+<p>En la tag link se colocan los atributos href, rel y, a partir del segundo archivo, el break point media="screen and (min-width: #px". El style.css debe estar hecho para mobile. Luego se pueden crear otros archivos como tablet.css o desktop.css.</p>
+<img src="./img/mobile-first-design.png" alt="">
+<img src="./img/mobilefirt.png" alt="">
+</body>
+</html>

@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+/*SIEMPRE DEBE ESTAR ETIQUETA GLOBAL EN TODOS LOS ARCHIVOS EN CSS*/
+}
+html {
+    font-size: 62.5%;
+}
+/*SIEMPRE DEBE ESTAR ETIQUETA GLOBAL EN TODOS LOS ARCHIVOS EN CSS*/
+p {
+    font-size: 1.6rem;
+}
+/*SIEMPRE DEBE ESTAR ETIQUETA GLOBAL EN TODOS LOS ARCHIVOS EN CSS*/
+main div {
+    font-size: 1.6rem;
+}

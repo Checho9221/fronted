@@ -1,0 +1,32 @@
+.main-nav {
+    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+    background-color:aqua;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color:darkkhaki;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover {
+    color: blue;
+}
+
+.main-nav__item a:active {
+    color:aqua;
+}
+
+.main-nav__item a::after {
+    content: " / ";
+}
+
+/*Pseudo Clases (:class) define el estilo de un estado especial de un elemento*/
+/*Pseudo Elementos (::element) define el estilo de una parte especifica de un elemento*/

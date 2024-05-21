@@ -1,0 +1,16 @@
+/*Se tiene 3 opciones para llamar las etiquetas, por etiqueta, clase o ID*/
+
+p {
+    color: blue;
+    font-size: 50px;
+}
+
+.texto {
+    color: brown;
+    font-size: 60px;
+}
+
+#parrafo {
+    color: chartreuse;
+    font-size: 70px;
+}
