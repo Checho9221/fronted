@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>Que es JavaScript</h1>
+    <P>Es un lenguaje interpretado, orientado a objetos, débilmente tipado, dinámico y compatible. Es un lenguaje de
+        programación que se utiliza para hacer páginas web interactivas. Es una de las tres tecnologías web principales,
+        junto con HTML, CSS y es compatible con todos los navegadores web modernos actualmente.</p>
+    <p><b>Que es débilmente tipado:</b> Es el tipo de una variable no está estrictamente definido y que puede ser
+        reasignada a valores de diferentes tipos de datos. Se pueden hacer operaciones entre tipos distintos de datos
+        (enteros con strings, booleanos con enteros, etc). Ejemplo:</p>
+    <img src="./img/java.png" alt="java">
+    <br>
+    <p><b>Que es dinámico:</b> Corre directamente en la etapa de Runetime sin una etapa de compilación previa. Esto
+        permite probar
+        nuestro código inmediatamente; pero también es lo que hace que los errores se muestren hasta que se ejecuta el
+        programa. El navegador lee linea por linea el código, el cuál le indica lo que tiene que hacer, sin la necesidad
+        de compilar. Todo esto es controlado por el motor de Javascript V8 del navegador.</p>
+    <p><b>Que es compatible:</b> Todas las funciones nuevas que salen de Javascript no dañarán el trabajo ya hecho, pero
+        no se podrá
+        utilizar en nuestro entorno de trabajo inmediatamente. Para solucionar esto está Babel que permite utilizar las
+        nuevas características del lenguaje pero lo transforma a una versión que el navegador pueda entender.</p>
+    <p>En JavaScript existe dos componentes principales: datos que guardamos en memoria y tareas que haremos con esos
+        datos. Estos conforman los elementos de un lenguaje de programación.</p>
+    <h1>Comentarios en JavaScript</h1>
+    <p>Los comentarios que el compilador de JavaScript ignorará. Existen dos maneras: en una sola línea con //; y en
+        múltiples líneas utilizando /* */.</p>
+    <img src="./img/comentario.png" alt="comentario">
+    <h1>Tipos de Datos</h1>
+    <p>Los tipos de datos es la característica propia que tiene un valor. En JavaScript existen los tipos de datos
+        primitivos y los no primitivos. </p>
+    <h3>Datos Primitivos</h3>
+    <p>Los tipos de datos primitivos son los siguientes:</p>
+    <ul>
+        <li>Number: indica un valor numérico, ya sea entero o flotante (con decimales).</li>
+        <li>String: indica una cadena de caracteres, el valor está envuelto en comillas dobles " o simples '.</li>
+        <li>Boolean indica un valor lógico binario, es decir, los valores true o false.</li>
+        <li>Null: indica un valor nulo.</li>
+        <li>Undefined: indica un valor no definido.</li>
+        <li>Bigint: </li>
+        <li>Symbol: </li>
+    </ul>
+    <h3>Tipos no primitivos o de objeto</h3>
+    <p>Los tipos de datos de objeto o no primitivos son los siguientes:</p>
+    <ul>
+        <li>Function: indica una representación de función.</li>
+        <li>Object: indica una representación de objetos.</li>
+    </ul>
+    <h1>Palabra Reservada</h1>
+    <p>La palabra reservada <b>typeof</b> permite identificar el tipo de dato de un valor en JavaScript. Existe una
+        excepción, al ejecutar typeof null, en la consola mostrará 'object', esto es un error dentro JavaScript.</p>
+    <h3>Tipo de datos primitivos</h3>
+    <ul>
+        <li>typeof 5 // 'number'</li>
+        <li>typeof "hola" // 'string'</li>
+        <li>typeof true // 'boolean'</li>
+        <li>typeof null // 'object'</li>
+        <li>typeof undefined // 'undefined'</li>
+    </ul>
+    <h3>Tipos de datos de objeto</h3>
+    <ul>
+        <li>typeof console.log  // 'function'</li>
+        <li>typeof {tipo: "objeto"} // 'object'</li>
+        <li>typeof [1,2,3,4]  // 'object'</li>
+    </ul>
+</body>
+
+</html>
