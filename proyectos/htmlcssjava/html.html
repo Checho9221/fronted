@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--METADATOS-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Sergio Castañeda">
+    <meta name="copyright" content="Propietario del Sergio Castañeda">
+    <meta name="robots" content="index">
+    <meta name="robots" content="follow">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./html.css">
+    <link rel="stylesheet" href="./footer">
+    <title>HTML</title>
+</head>
+
+<!--CUERPO DEL DOCUMENTO-->
+
+<body>
+
+    <!--BARRA DE NAVEGACIÓN-->
+    <div class="nav">
+        <ul>
+            <li><a class="active" href="./principal.html">Home</a></li>
+            <li class="nav__list">
+                <ul>
+                    <li><a href="">Estructura Principal</a></li>
+                    <li><a href="">Estructura de una Etiqueta</a></li>
+                    <li><a href="">Contenedores</a></li>
+                    <li><a href="">Comentarios</a></li>
+                    <li><a href="">Multimedia</a></li>
+                    <li><a href="">Marcado y Formateo de Texto Avanzado</a></li>
+                    <li><a href="">Formularios</a></li>
+                    <li><a href="">Etiquetas mas Utilizadas</a></li>
+                </ul>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!--CONTENIDO PRINCIPAL-->
+    <br>
+    <div class="right">
+        <main>
+            <p>
+            <h1>HTML</h1><br>
+            </p>
+            <p>HTML (HyperText Markup Language - Lenguaje de marcado de hipertexto) determina la estructura del
+                contenido de una página web. Consta de un conjunto de elementos (etiquetas) que se utilizan para<b>,
+                    incluir o eliminar contenido, ya sea texto negrilla o cursiva, enlazar una dirección web en un
+                    texto, insertar imagenes o videos.</b></p><br>
+            <p>Hoy en dia y debido al constante cambio en el desarrollo web, actualmente se utiliza <b>HTML5</b> (quinta
+                versión de la World Wide Web), que es mucho más dinámico y contiene elementos multimedia. A diferencia
+                del
+                HTML nativo, que sólo permitía la creación de sitios web principalmente estáticos y sin tanto contenido
+                dinamico.</p><br>
+            <p>En este articulo, daremos información sobre la estructura principal de HTML con sus etiquetas mas
+                utilizadas,
+                dentro de cada contenedor e información sobre <b>estructura, anatomia, etiquetas, caracteres,
+                    comentarios,
+                    imagenes, videos, hipervínculos, etc.</b></p><br>
+        </main>
+        <!--TEXTO-->
+        <section>
+            <ol>
+                <li><b><u>Estructura principal</u></b></li><br>
+            </ol>
+            <ul>
+                <li>!DOCTYPE</li><br>
+                <p>Informa al navegador qué versión de HTML o XML (Lenguaje de Marcado Extensible), se utiliza para
+                    escribir el documento. El DOCTYPE es una declaración y no una etiqueta. Esta es la cadena más corta
+                    que se
+                    considera un tipo de documento válido.</p><br>
+                <img src="./img/doctype.png" alt="doctypehtml"><br>
+                <li>HTML</li><br>
+                <p>Encierra todo el contenido de la página HTML, se llama elemento raíz principal.</p><br>
+                <img src="./img/html.png" alt="html"><br>
+                <li>LANG</li><br>
+                <p>Dentro del elemento o etiqueta <b>"HTML"</b> se puede establecer el idioma correspondiente de la
+                    pagina
+                    web.</p><br>
+                <img src="./img/lang.png" alt="lang"><br>
+                <li>HEAD</li><br>
+                <p>Actúa como un contenedor para cualquier cosa que desee agregar a una página HTML que no sea visible
+                    para
+                    los visitantes de la página. Esto incluye palabras clave, descripción de la página en los resultados
+                    de
+                    búsqueda, CSS para aplicar estilo al contenido, declaraciones de caracteres, JAVASCRIPT y más.</p>
+                <br>
+                <img src="./img/head.png" alt="head"><br>
+                <li>META</li><br>
+                <p>Describe un documento generado, quién lo escribio, sirve para aportar información sobre el documento.
+                    Contiene atributos como: <b>"NAME"</b> (Especifica el tipo de metadato del que se trata; es decir,
+                    qué
+                    tipo de información contiene) y <b>"CONTENT"</b> (Especifica el contenido del metadato en sí).</p>
+                <br>
+                <img src="./img/meta.png" alt="meta"><br>
+                <li>TITLE</li><br>
+                <p>Aparece en la pestaña del navegador o en la barra de título cuando se carga la página. Se utiliza
+                    para
+                    describir la página cuando está marcada como favorita o marcada como favorita en la barra de
+                    favoritos
+                    de una navegador web (Google Chrome, Mozilla Firefox, Microsoft Edge, etc).</p><br>
+                <img src="./img/title.png" alt="title"><br>
+                <li>BODY</li><br>
+                <p>Registra todo el contenido visible que uno desea mostrar a los usuarios web que visiten la página web
+                    o
+                    que el usuario final solicite que el contenido que necesite sea acorde a sus necesidades, ya sea
+                    texto,
+                    imágenes, videos, juegos, sonidos y muchos más.</p><br>
+                <img src="./img/body.png" alt="body"><br>
+                <li>LINK</li><br>
+                <p>Esta etiqueta requiere dos atributos: <b>rel="stylesheet"</b> para indicar que se trata de una hoja
+                    de
+                    estilo de un documento y <b>"href"</b> para contener la ruta al archivo de hoja de estilo de CSS.
+                </p><br>
+                <img src="./img/link.png" alt="link"><br>
+                <li>SCRIPT</li><br>
+                <p>Este es un atributo que nombra el JavaScript (lenguaje de programación interpretado) que debe
+                    cargarse y
+                    el atributo: <b>defer</b> que básicamente le dice al navegador que cargue el archivo de JavaScript,
+                    al
+                    mismo tiempo que el HTML de la página. Esto es útil porque hace que todo el HTML se cargue antes de
+                    que
+                    se ejecute JavaScript.</p><br>
+                <img src="./img/script.png" alt="script"><br>
+            </ul>
+            <ol>
+                <li><b><u>Estructura de una etiqueta</u></b></li><br>
+            </ol>
+            <ul>
+                <li><b>Etiqueta de apertura</b>, consta del nombre del elemento (en este caso p) rodeado por corchetes
+                    angulares de apertura y cierre (<>).</li><br>
+                <img src="./img/apertura.png" alt="apertura"><br>
+                <li><b>Etiqueta de cierre</b>, es la misma que la etiqueta de apertura, excepto que incluye una barra
+                    diagonal de cierre (/) antes del nombre de la etiqueta.</li><br>
+                <img src="./img/cierre.png" alt="cierre"><br>
+                <li><b>Contenido</b>, que uno desea agregar, debe estar dentro de las etiquetas de apertura y cierre.
+                </li><br>
+                <img src="./img/contenido.png" alt="contenido"><br>
+                <li><b>Elemento</b>, es la combinación de etiqueta de apertura, cierre y el contenido.</li><br>
+                <img src="./img/elemento.png" alt="elemento"><br>
+            </ul>
+            <ol>
+                <li><b><u>Contenedores</u></b></li><br>
+            </ol>
+            <ul>
+                <li><b>HEADER</b></li><br>
+                <p>El encabezado por lo general, consta de una barra grande en la parte superior de la página con un
+                    título
+                    grande, un logotipo y algún texto introductorio, esta parte suele permanecer igual cuando se navega
+                    entre páginas del mismo sitio web.</p><br>
+                <img src="./img/header.png" alt="header"><br>
+                <li><b>NAV</b></li><br>
+                <p>La barra de navegación, son enlaces que se encuentran en la parte principal del sitio, consta
+                    normalmente
+                    de un menú con botones, enlaces o pestañas, al igual que el título, este contenido es el mismo en
+                    las
+                    diferentes páginas del sitio web.</p><br>
+                <img src="./img/nav.png" alt="navegación"><br>
+                <li><b>MAIN</b></li><br>
+                <p>El contenido principal, es la parte central de la página y contiene la mayor parte del contenido
+                    específico de la página web, tiene varias subsecciones representadas por elementos article, section,
+                    div. Solo se puede utilizar una vez en la página web y se debe colocar dentro de la etiqueta body.
+                </p><br>
+                <img src="./img/main.png" alt="main"><br>
+                <li><b>ARTICLE</b></li><br>
+                <p>El articulo o autocontenida, es un bloque de contenido que es útil independientemente del resto de la
+                    página, como una publicación de blog.</p><br>
+                <img src="./img/article.png" alt="articule"><br>
+                <li><b>SECTION</b></li><br>
+                <p>La sección generica, se utiliza para agrupar cada parte de una página que forma su propia sección,
+                    como
+                    un mapa, conjunto de títulos o resúmenes.</p><br>
+                <img src="./img/section.png" alt="section"><br>
+                <li><b>ASIDE</b></li><br>
+                <p>La barra lateral, contiene información adicional como enlaces, anuncios, etc. Esta relacionado con el
+                    contenido principal de la página, pero en otros casos encontramos elementos repetidos, como un menú
+                    de
+                    navegación secundario.</p><br>
+                <img src="./img/aside.png" alt="aside"><br>
+                <li><b>FOOTER</b></li><br>
+                <p>El pie de pagina, se encuentra en la parte inferior de la página que generalmente contiene texto
+                    pequeño,
+                    derechos de autor, redes sociales, información de contacto, información general como asi mismo en el
+                    encabezado, pero generalmente es secundaria y no es tan importante con respecto a la página.</p><br>
+                <img src="./img/footer.png" alt="footer"><br>
+                <li><b>SPAN</b></li><br>
+                <p>Un contenedor en línea, es un elemento no semántico utilizado dentro de una línea, se utiliza cuando
+                    no
+                    podemos utilizar ningún otro elemento textual semántico para incluir el contenido.</p><br>
+                <img src="./img/span.png" alt="span"><br>
+                <li><b>DIV</b></li><br>
+                <p>La división de contenido, es un contenedor general que no afecta el contenido o el diseño hasta que
+                    se le
+                    aplique algún estilo con el formato de hojas de estilos CSS.</p><br>
+                <img src="./img/div.png" alt="división"><br>
+                <li><b>BR</b></li><br>
+                <p>Saltos de linea, se genera dentro un párrafo de la historia; es la única manera de presentar líneas
+                    cortas como una dirección postal o un poema.</p><br>
+                <img src="./img/br.png" alt="br"><br>
+            </ul>
+            <ol>
+                <li><b><u>Comentarios</u></b></li><br>
+                <p>En HTML se tiene un mecanismo para escribir comentarios dentro del código, todos los navegadores web
+                    actuales pueden ignorar los comentarios, por lo que no son visibles para el usuario final.</p><br>
+                <p>Esto con el fina de saber explicar la lógica o codificación del codigo ingresado, ademas es muy útil
+                    cuando se guarde una base de códigos después de haber estado ausente.</p><br>
+                <p>Para realizar un comentario dentro del codigo en HTML, el marcador especial es:</p><br>
+                <img src="./img/comentario.png" alt="cometario"><br>
+            </ol>
+            <ol>
+                <li><b><u>Multimedia</u></b></li><br>
+                <p>HTML utiliza etiquetas para la insercción de imagenes y videos dentro de nuestra pagina WEB utlizando
+                    algunos atributos:</p><br>
+                <ul>
+                    <li><b>SRC (source): </b>Contiene la ruta del archivo de imagen, la ruta o la ubicación de la
+                        imagen.
+                    </li><br>
+                    <img src="./img/src.png" alt="src"><br>
+                    <li><b>ALT (alternative): </b>Contiene un texto que debería describir la imagen, y que podría ser
+                        accedido por usuarios que no pueden ver la imagen.</li><br>
+                    <img src="./img/alt.png" alt="alt"><br>
+                    <li><b>Width: </b>Especifica el ancho de la imagen con la unidad en píxeles, se recomienda manejarlo
+                        en
+                        CSS.</li><br>
+                    <img src="./img/width.png" alt="width"><br>
+                    <li><b>Height: </b>Especifica la altura de la imagen con la unidad en píxeles, se recomienda
+                        manejarlo
+                        en CSS.</li><br>
+                    <img src="./img/height.png" alt="height"><br>
+                </ul>
+                <p>Explicaremos las 5 etiquetas para insertar elementos multimedia:</p><br>
+                <ul>
+                    <li><b>Imagenes: </b>La etiqueta "IMG", se utiliza para insertar imagenes en una pagina HTML. Es una
+                        etiqueta vacia, la cual no contiene texto, sino atributos "SRC" y "ALT", no tiene etiqueta de
+                        cierre.</li><br>
+                    <img src="" alt="imagenes"><br>
+                    <li><b>Videos: </b>La etiqueta "VIDEO", se utiliza para mostrar videos directamente desde la pagina
+                        de
+                        HTML. Es una etiqueta vacia, la cual no contiene texto, sino atributos "SRC", tiene etiqueta de
+                        cierre.</li><br>
+                    <img src="" alt="videos"><br>
+                    <video src=""></video><br>
+                    <li><b>Audios: </b>La función de la etiqueta "AUDIO" funciona muy similar a la etiqueta de "VIDEO",
+                        la
+                        diferencia es que solo se utilizara archivos de audio. Es una etiqueta vacia, la cual no
+                        contiene
+                        texto, sino atributos "SRC", tiene etiqueta de cierre.</li><br>
+                    <img src="" alt="audios"><br>
+                    <audio src=""></audio><br>
+                    <li><b>Tracks: </b>La función de la etiqueta "TRACKS", se utiliza para pistas de texto
+                        cronometrados, se
+                        pueden incluir en subtitulos, titulos, descriptiones, capitulos y metadatos mediante las
+                        etiquetas
+                        de "VIDEO" e "IMG". Es una etiqueta vacia, la cual no contiene texto, sino atributos "SRC",
+                        "KIND",
+                        "SRCLANG" y "LABEL", no tiene etiqueta de cierre.</li><br>
+                    <img src="" alt="tracks"><br>
+                    <track src="" kind="" srclang="" label="" default><br>
+                    <li><b>Picture: </b>Muestra las imagenes mucho mas flexibles al contrario de la etiqueta "IMG" que
+                        muestra imagenes de manera tradicional y dependiendo de nuestra necesidades, se puede agrupar
+                        una
+                        serie de imagenes. Es una etiqueta vacia, la cual no contiene texto, sino atributos "SOURCE",
+                        "IMG"
+                        y "ALT", no tiene etiqueta de cierre.</li><br>
+                    <img src="" alt="picture"><br>
+                    <picture>
+                        <source srcset=""><br>
+                        <img src="" alt=""><br>
+                    </picture>
+                </ul>
+            </ol>
+            <ol>
+                <li><b><u>Marcado de Texto y Formateo de texto avanzado</u></b></li><br>
+                <p>El marcado de texto, permiten especificar ciertas partes del encabezado, que permite especificar
+                    ciertas
+                    partes del contenido (encabezados y sub encabezados). En HTML se tiene 6 niveles de encabezado a
+                    partir
+                    de la etiqueta "H1" al "H6".</p><br>
+                <p>La etiqueta "p" se utilizara frecuentemente para el marcado de contenido de texto regular.</p><br>
+                <img src="" alt="marcado"><br>
+                <p>El marcado de texto avanzado, refiere a marcar una serie de conjuntos de elementos, como los
+                    terminos,
+                    deficiones, preguntas y respuestas</p><br>
+                <p>Las citas en linea funcionan de la misma manera, excepto que se utilizan la etiqueta "Q". En HTML
+                    registra una etiqueta para marcar la información de un contacto, mediante la etiqueta
+                    "ADDRESS".
+                </p><br>
+                <p>Los superindices "SUP" y subindices "SUB" se utilizan para marcar elementos como fecha, formulas
+                    quimicas
+                    y ecuaciones matematicas.</p><br>
+                <img src="" alt="avanzado"><br>
+            </ol>
+            <p>Mediante una tabla mostraremos las etiquetas mas utilizadas en HTML:</p><br>
+            <table class="base">
+                <tr>
+                    <td rowspan="10">Base Principal</td>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>!doctype</td>
+                    <td>Indica la versión de documento HTML</td>
+                </tr>
+                <tr>
+                    <td>html</td>
+                    <td>Es la raíz del archivo</td>
+                </tr>
+                <tr>
+                    <td>head</td>
+                    <td>Engloba los metadatos</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>Titulo en la pestaña del navegador</td>
+                </tr>
+                <tr>
+                    <td>link</td>
+                    <td>Enlaza archivos CSS</td>
+                </tr>
+                <tr>
+                    <td>style</td>
+                    <td>Escribe CSS dentro del documento HTML</td>
+                </tr>
+                <tr>
+                    <td>script</td>
+                    <td>Enlaza o escribe JavaScript en el documento HTML</td>
+                </tr>
+                <tr>
+                    <td>meta</td>
+                    <td>Características sobre la página</td>
+                </tr>
+                <tr>
+                    <td>body</td>
+                    <td>Elemento visible en la página para el usuario</td>
+                </tr>
+            </table>
+            <br>
+            <table class="texto">
+                <tr>
+                    <td rowspan="16">Texto</td>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>p</td>
+                    <td>Crea un párrafo</td>
+                </tr>
+                <tr>
+                    <td>h1, h2, h3, h4, h5, h6</td>
+                    <td>Estructura los títulos y subtítulos, el h1 es el más importante</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>Texto en negrilla</td>
+                </tr>
+                <tr>
+                    <td>i</td>
+                    <td>Texto en cursiva</td>
+                </tr>
+                <tr>
+                    <td>u</td>
+                    <td>Texto en subrayado</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>Agrega un link</td>
+                </tr>
+                <tr>
+                    <td>strong</td>
+                    <td>Texto importante de la página</td>
+                </tr>
+                <tr>
+                    <td>br</td>
+                    <td>Crea un salto de línea</td>
+                </tr>
+                <tr>
+                    <td>q</td>
+                    <td>Citas en línea</td>
+                </tr>
+                <tr>
+                    <td>q</td>
+                    <td>Citas en línea</td>
+                </tr>
+                <tr>
+                    <td>abrr</td>
+                    <td>Genera abreviaturas</td>
+                </tr>
+                <tr>
+                    <td>sup, sub</td>
+                    <td>Marca elementos como fechas, fórmulas químicas y ecuaciones matemáticas</td>
+                </tr>
+                <tr>
+                    <td>dl</td>
+                    <td>Lista de descripciones</td>
+                </tr>
+                <tr>
+                    <td>dt</td>
+                    <td>Terminó a describir</td>
+                </tr>
+                <tr>
+                    <td>dd</td>
+                    <td>Definición de descripción</td>
+                </tr>
+            </table>
+            <br>
+            <table class="informatico">
+                <tr>
+                    <td rowspan="7">Codigo Informatico</td>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>code</td>
+                    <td>Marcar fragmentos genéricos de código informático.</td>
+                </tr>
+                <tr>
+                    <td>pre</td>
+                    <td>Respetar los espacios en blanco.</td>
+                </tr>
+                <tr>
+                    <td>var</td>
+                    <td>Marcar específicamente nombres de variables.</td>
+                </tr>
+                <tr>
+                    <td>kbd</td>
+                    <td>Marcar entradas de teclado.</td>
+                </tr>
+                <tr>
+                    <td>samp</td>
+                    <td>Marcar la salida de un programa de ordenador.</td>
+                </tr>
+                <tr>
+                    <td>time</td>
+                    <td>Marcar horas y fechas en un formato legible por la máquina.</td>
+                </tr>
+            </table>
+            <br>
+            <table class="multimedia">
+                <tr>
+                    <td rowspan="5">Multimedia</td>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>img</td>
+                    <td>Inserta una imagen.</td>
+                </tr>
+                <tr>
+                    <td>video</td>
+                    <td>Inserta un video.</td>
+                </tr>
+                <tr>
+                    <td>iframe</td>
+                    <td>Inserta contenido de otras páginas.</td>
+                </tr>
+                <tr>
+                    <td>audio</td>
+                    <td>Inserta audio.</td>
+                </tr>
+            </table>
+            <br>
+            <table class="estructura">
+                <tr>
+                    <td rowspan="8">Estructurar el Contenido</td>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>ul</td>
+                    <td>Crea una lista sin orden (•, -)</td>
+                </tr>
+                <tr>
+                    <td>ol</td>
+                    <td>Crea una lista ordenada (1,2,3,4,5,6,7,8,9).</td>
+                </tr>
+                <tr>
+                    <td>li</td>
+                    <td>Define los artículos de la lista ordenada o sin ordenada.</td>
+                </tr>
+                <tr>
+                    <td>div</td>
+                    <td>Secciona o agrupa etiquetas.</td>
+                </tr>
+                <tr>
+                    <td>nav</td>
+                    <td>Crea el menú de navegación.</td>
+                </tr>
+                <tr>
+                    <td>header</td>
+                    <td>Define la cabecera de la página.</td>
+                </tr>
+                <tr>
+                    <td>footer</td>
+                    <td>Define el pie de página.</td>
+                </tr>
+            </table>
+            <br>
+            <table class="tablas">
+                <tr>
+                    <td rowspan="6">Tablas</td>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>table</td>
+                    <td>Crea una tabla.</td>
+                </tr>
+                <tr>
+                    <td>tr</td>
+                    <td>Crea una fila.</td>
+                </tr>
+                <tr>
+                    <td>td</td>
+                    <td>Crea una columna.</td>
+                </tr>
+                <tr>
+                    <td>th</td>
+                    <td>Crea el título de cada columna.</td>
+                </tr>
+                <tr>
+                    <td>col</td>
+                    <td>Especifica las propiedades de las columnas.</td>
+                </tr>
+            </table>
+            <br>
+            <table class="formularios">
+                <tr>
+                    <td rowspan="6">Formularios</td>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>form</td>
+                    <td>Crea un formulario.</td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Campo para introducir datos.</td>
+                </tr>
+                <tr>
+                    <td>label</td>
+                    <td>El título del input.</td>
+                </tr>
+                <tr>
+                    <td>textarea</td>
+                    <td>Campo para introducir mucho texto.</td>
+                </tr>
+                <tr>
+                    <td>button</td>
+                    <td>Crea un botón.</td>
+                </tr>
+            </table>
+        </section>
+        <div class="footer">
+            <footer>
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <!--PIE DE PAGINA-->
+</body>
+
+</html>
