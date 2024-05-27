@@ -6,6 +6,9 @@
 
 body {
     background-color: papayawhip;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 130px;
+    width: 750px;
+    padding: 60px;
+    text-align: center;
 }
