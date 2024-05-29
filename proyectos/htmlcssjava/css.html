@@ -54,20 +54,15 @@
             <p>Estas se llaman tambien <b>hojas de estilo secuenciales</b>, porque se puede tener varias hojas y una de
                 ellas hereda las propiedades de las en si demás. Si se desea cambiar el aspecto de un sitio web, se
                 necesita implementar <b>CSS</b>, que junto con un buen sistema de gestión de contenidos, aumentara la
-                cobertura de visualización de la pagina web.</p><br>
-            <p>En este articulo explicaremos las sintaxis y propiedades mas utilizadas en CSS.</p>
+                cobertura de visualización de la pagina web.</p>
         </main>
-        <!--TEXTO-->
         <br>
+        <!--TEXTO-->
+        <ul>
+            <li>Sintaxis</li>
+        </ul><br>
+        <p></p>
         <table class="sintaxis">
-            <tr>
-                <td colspan="5">Sintaxis</td>
-            </tr>
-            <tr>
-                <td colspan="5">Es un conjunto de reglas que definen cómo escribir código en CSS. Estas reglas definen
-                    cómo se deben estructurar las reglas de estilo y cómo se deben combinar los selectores, propiedades
-                    y valores para producir un diseño coherente en una página web.</td>
-            </tr>
             <tr>
                 <td>Selector</td>
                 <td>Propiedad</td>
@@ -76,45 +71,31 @@
                 <td>Comentario</td>
             </tr>
             <tr>
-                <td>Esta es la primera parte de una regla CSS que le indica al navegador a qué elementos HTML
-                    (etiquetas) se aplica la regla. Los selectores CSS son la base de las reglas estructurales que
-                    determinan la estética y el diseño de los elementos del sitio web.<br>
-                    <br>Ejemplo: (tipo, clase, ID, atributo y universal).
+                <td><br>
+                    <br>
                 </td>
-                <td>Este es un elemento de estilo especial que se puede cambiar en elementos seleccionados. Cada
-                    propiedad CSS tiene un conjunto de valores que se pueden establecer para determinar su apariencia,
-                    dependiendo del selector que elijamos.<br>
-                    <br>Ejemplo: (color, border-color, margin, padding).
+                <td><br>
+                    <br>
                 </td>
-                <td>Es una forma de definir el conjunto de subvalores admitidos por una propiedad. La validez del
-                    atributo depende del tipo de valor establecido y del parámetro específico.<br>
-                    <br>Ejemplo: (píxeles, porcentajes, nombre del color).
+                <td><br>
+                    <br>
                 </td>
-                <td>Es un conjunto de declaraciones que se aplican a uno o más elementos. Una regla CSS consta de uno o
-                    más selectores seguidos de una declaración que consta de uno o más pares de propiedad y valor.<br>
-                    <br>Ejemplo: (selector + propiedad + valor).
+                <td><br>
+                    <br>
                 </td>
-                <td>Se añade a un archivo CSS para informar al diseñador de su utilidad y proporcionar información. Los
-                    comentarios se pueden colocar en cualquier espacio en blanco permitido en la hoja de estilo y se
-                    insertan entre las etiquetas /* (apertura) y */ (cierre). Los navegadores web ignoran todo el texto
-                    entre estas dos etiquetas.<br>
-                    <br>Ejemplo: (/* */).
+                <td><br>
+                    <br>
                 </td>
             <tr>
-                <td colspan="5"><img class="css" src="./img/css.png" alt="css"></td>
+                <td colspan="5"><img class="css" src="" alt="sintaxis"></td>
             </tr>
             </tr>
         </table>
-        <br>
+        <ul>
+            <li>Selectores</li>
+        </ul><br>
+        <p></p>
         <table class="selectores">
-            <tr>
-                <td colspan="5">Selectores</td>
-            </tr>
-            <tr>
-                <td colspan="5">Primera regla en CSS, es un patrón de elementos y otras expresiones que le indica al
-                    navegador qué elementos HTML seleccionar para activar reglas que contienen valores de propiedad CSS.
-                </td>
-            </tr>
             <tr>
                 <td>Tipo</td>
                 <td>Clase</td>
@@ -123,35 +104,130 @@
                 <td>Universal</td>
             </tr>
             <tr>
-                <td>Se selecciona todos los elementos HTML (etiquetas) que tengan un nombre del mismo nodo. Por ejemplo,
-                    para la etiqueta de ancla "a", el selector selecciona todos los elementos y les aplica el valor de
-                    la propiedad CSS.<br>
-                    <br>Ejemplo: (body, head, a, img).
+                <td><br>
+                    <br>
                 </td>
-                <td>Le indica al navegador qué elementos HTML seleccionar para aplicar una regla que contiene valores de
-                    atributos CSS. En el código HTML se selecciona un elemento y se utiliza su clase
-                    correspondiente.<br>
-                    <br>Ejemplo: (En HTML "div class"container" y en CSS .container).
+                <td><br>
+                    <br>
                 </td>
-                <td>Es una forma de definir el conjunto de subvalores admitidos por una propiedad. La validez del
-                    atributo depende del tipo de valor establecido y del parámetro específico.<br>
-                    <br>Ejemplo: (píxeles, porcentajes, nombre del color).
+                <td><br>
+                    <br>
                 </td>
-                <td>Es un conjunto de declaraciones que se aplican a uno o más elementos. Una regla CSS consta de uno o
-                    más selectores seguidos de una declaración que consta de uno o más pares de propiedad y valor.<br>
-                    <br>Ejemplo: (selector + propiedad + valor).
+                <td><br>
+                    <br>
                 </td>
-                <td>Se añade a un archivo CSS para informar al diseñador de su utilidad y proporcionar información. Los
-                    comentarios se pueden colocar en cualquier espacio en blanco permitido en la hoja de estilo y se
-                    insertan entre las etiquetas /* (apertura) y */ (cierre). Los navegadores web ignoran todo el texto
-                    entre estas dos etiquetas.<br>
-                    <br>Ejemplo: (/* */).
+                <td><br>
+                    <br>
                 </td>
             <tr>
-                <td colspan="5"><img src="./img/css.png" alt="css"></td>
+                <td colspan="5"><img src="" alt="selectores"></td>
             </tr>
             </tr>
         </table>
+        <ul>
+            <li>Combinadores</li>
+        </ul><br>
+        <p></p>
+        <table class="combinadores">
+            <tr>
+                <td>Descendientes</td>
+                <td>Hijo Directo</td>
+                <td>Elemento Adyacente</td>
+                <td>General de Hermanos</td>
+                <td>Columna</td>
+            </tr>
+            <tr>
+                <td><br>
+                    <br>
+                </td>
+                <td><br>
+                    <br>
+                </td>
+                <td><br>
+                    <br>
+                </td>
+                <td><br>
+                    <br>
+                </td>
+                <td><br>
+                    <br>
+                </td>
+            <tr>
+                <td colspan="5"><img src="" alt="combinadores"></td>
+            </tr>
+            </tr>
+        </table>
+        <ul>
+            <li>Pseudoclases</li>
+        </ul><br>
+        <p></p>
+        <table class="pseudoclases">
+            <tr>
+                <td>:active</td>
+                <td>:focus</td>
+                <td>:hover</td>
+                <td>:nth-child(n)</td>
+            </tr>
+            <tr>
+                <td><br>
+                    <br>
+                </td>
+                <td><br>
+                    <br>
+                </td>
+                <td><br>
+                    <br>
+                </td>
+                <td><br>
+                    <br>
+                </td>
+            <tr>
+                <td colspan="4"><img src="" alt="pseudoclases"></td>
+            </tr>
+            </tr>
+        </table>
+        <ul>
+            <li>Pseudoelementos</li>
+        </ul><br>
+        <p></p>
+        <table class="pseudoelementos">
+            <tr>
+                <td>::after</td>
+                <td>::before</td>
+                <td>::first-letter</td>
+                <td>::placeholder</td>
+            </tr>
+            <tr>
+                <td><br>
+                    <br>
+                </td>
+                <td><br>
+                    <br>
+                </td>
+                <td><br>
+                    <br>
+                </td>
+                <td><br>
+                    <br>
+                </td>
+            <tr>
+                <td colspan="4"><img src="" alt="pseudoelementos"></td>
+            </tr>
+            </tr>
+        </table><br>
+        <h1>Propiedades CSS</h1><br>
+        <p>Se utilizan para controlar la apariencia y el comportamiento de los elementos en una página web, es como herramientas que nos permiten modificar y dar forma a nuestro diseño.</p><br>
+        <p>Con estas funciones podremos controlar desde el tamaño y color de los textos hasta la posición y tamaño de las
+            imágenes, pasando por animaciones y transiciones de elementos.</p>
+    </div>
+    <!--PIE DE PAGINA-->
+    <div>
+        <footer>
+            <a href="">GitHub</a>
+            <a href="">Platzi</a>
+            <a href="">Linkedin</a>
+        </footer>
+    </div>
 </body>
 
 </html>
